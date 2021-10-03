@@ -1,8 +1,8 @@
 import machine
 import utime
 
-led_external = machine.Pin(15, machine.Pin.OUT);
+led_internal = machine.Pin(25, machine.Pin.OUT);
 
 while True:
- led_external.toggle()
+ led_internal.toggle()
  utime.sleep(1)
