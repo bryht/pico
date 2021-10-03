@@ -127,6 +127,8 @@ sensor = DHT11(pin)
 while True:
     utime.sleep(1)
     try:
+        print("-------------------------------------")
+        print("Time: {}".format(utime.time()))
         print("Temperature: {}".format(sensor.temperature))
         print("Humidity: {}".format(sensor.humidity))
     except InvalidChecksum:
